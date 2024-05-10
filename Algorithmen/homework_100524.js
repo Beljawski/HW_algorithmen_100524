@@ -21,3 +21,16 @@ function checkSquareNum(a, b) {
     }
 }
 checkSquareNum(2, 5);
+
+// Задача 3. На промежутке от 1 до N, показать кубы чисел, заканчивающихся на четную цифру
+
+function showCubesWithEvenNum(N) {
+    for (let i = 1; i <= N; i++) {
+        if (i % 10 % 2 === 0) { 
+            let cube = i ** 3;
+            console.log(`${i} в кубе равно ${cube}`);
+        }
+    }
+}
+
+showCubesWithEvenNum(10);
